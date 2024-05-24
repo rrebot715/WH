@@ -1,7 +1,7 @@
 {
   "name": "testapp",
   "short_name": "Tapp",
-  "start_url": "/?home=true",
+  "start_url": "/?source=pwa",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
