@@ -1,0 +1,99 @@
+.card{
+	height: calc(88.9mm - 12px);
+	width: calc(63.5mm - 12px);
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	vertical-align: top;
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	position: relative;
+	font-size: .72em;
+}
+h1{
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+	width: 100%;
+	margin: 0;
+	height: 21px;
+	text-align: center;
+	border-color: #1e6257;
+	color: #1e6257;
+}
+h2{
+	font-size: 10px;
+	font-weight: 700;
+	margin: 0px;
+}
+p{
+	margin: 7px 0;
+}
+p a{
+	font-size: 13px;
+	font-weight: 700;
+	color: #1e6257;
+}
+
+
+
+table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	padding: 0;
+}
+th{
+	background-color: #cccccc;
+}
+.stats th{
+	width: calc((100% - 2px) / 6);
+}
+.stats td{
+	vertical-align: top;
+}
+.stats .otherModel{
+	text-align: left;
+	border-top: 1px solid black;
+}
+.weapon th{
+	width: calc((72.5% - 2px) / 6);
+}
+.weapon th,
+.weapon td{
+	padding: 0;
+}
+.abilities{
+	background-color: white !important;
+	text-align: right;
+}
+.weapon tr:nth-child(odd) {
+    border-bottom: 1px solid black;
+}
+.weapon th:nth-child(2) {
+	width: 27.5%;
+}
+.melee,
+.ranged {	
+	width: 2px; 
+}
+.melee{
+	background-color: #A21217; 
+}
+.ranged {
+	background-color: #0F4D6B;
+}
+.keywords{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.keywords div{
+	width: auto;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 2px;
+	margin: 1px 1px 0 0;
+}
+
