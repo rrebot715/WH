@@ -1,6 +1,6 @@
 {
-  "name": "testapp",
-  "short_name": "Tapp",
+  "name": "Orkz",
+  "short_name": "Orkz",
   "start_url": "./index.html",
   "icons": [
     {
