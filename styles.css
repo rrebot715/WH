@@ -1,3 +1,4 @@
+body{margin: 0;}
 .card{
 	/*	MTG card size
 	height: calc(88.9mm - 12px);
