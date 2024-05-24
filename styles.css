@@ -1,6 +1,8 @@
 .card{
+	/*	MTG card size
 	height: calc(88.9mm - 12px);
-	width: calc(63.5mm - 12px);
+	width: calc(63.5mm - 12px);*/
+	width: 100%;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
