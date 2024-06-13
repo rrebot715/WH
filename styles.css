@@ -73,15 +73,15 @@ th{
 	background-color: white !important;
 	text-align: right;
 }
-.weapon tr:nth-child(odd) {
+.weapon tr:nth-child(odd){
     border-bottom: 1px solid black;
 }
-.weapon th:nth-child(2) {
+.weapon th:nth-child(2){
 	width: 27.5%;
 }
 .melee,
-.ranged {	
-	width: 2px; 
+.ranged{	
+	width: 5px; 
 }
 .melee{
 	background-color: #A21217; 
