@@ -53,6 +53,7 @@ th{
 }
 .stats th{
 	width: calc((100% - 2px) / 6);
+	width: 40px;
 }
 .stats td{
 	vertical-align: top;
