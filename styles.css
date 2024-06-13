@@ -4,14 +4,14 @@ body{margin: 0;}
 	height: calc(88.9mm - 12px);
 	width: calc(63.5mm - 12px);*/
 	width: 100%;
-	max-width: 400px;
+	max-width: 410px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
 	vertical-align: top;
 	font-family: sans-serif;
 	font-size: 12px;
-	padding: 5px;
+	padding: 5px 0;
 	position: relative;
 	font-size: .72em;
 }
