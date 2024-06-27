@@ -8,6 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<link rel="manifest" href="manifest.json">
+	<style type="text/css">
+		#Ghazghkull,
+		#Meganobz{
+			display: none;
+		}
+	</style>
 </head>
 <body id="body">
 	<div class="card" id="Ghazghkull">
@@ -168,7 +174,7 @@
 			</tr>
 		</table>
 		<div class="keywords">
-			<div>During Waaagh!: Unit has 4+++</div>
+			<div>During Waaagh!: Unit has 5+++</div>
 			<div>Infantry, Grenades, Mega Armour, Meganobz</div>
 		</div>
 	</div><div class="card" id="Beastboss">
@@ -479,7 +485,7 @@
 			</tr>
 		</table>
 		<div class="keywords">
-			<div>While lead by Warboss: -1 to be wounded if strength is higher than class="rangedRow" their toughness</div>
+			<div>While lead by Warboss: -1 to be wounded if strength is higher than their toughness</div>
 			<div>Once per battle, ranged weapons get LETHAL HITS</div>
 			<div>Infantry, Grenades, Nobz</div>
 		</div>
@@ -963,6 +969,69 @@
 			<div>Model shooting within 9" gets -1 AP</div>
 			<div>Mounted, Grenades, Speed Freeks, Warbikers</div>
 		</div>
+	</div><div class="card" id="Zodgrod">
+		<h1>Zodgrod Wortsnagga</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>5</td>
+				<td>5+/6+++</td>
+				<td>5</td>
+				<td>7</td>
+				<td>1</td>
+			</tr>
+		</table>
+		<table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Squigstoppa</td>
+				<td>12</td>
+				<td>1</td>
+				<td>5+</td>
+				<td>4</td>
+				<td>-1</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Anti-Monster/Vehicle 4+, Pistol</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Da Grabzappa</td>
+				<td>Melee</td>
+				<td>5</td>
+				<td>2+</td>
+				<td>7</td>
+				<td>-2</td>
+				<td>2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">&nbsp;</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>During Waaagh!: unit gets +6" to Move</div>
+			<div>While leading: models get <strong>Scouts 9"</strong>, +1 to hit and wound, -1 to be wounded</div>
+			<div>Infantry, Character, Epic Hero, Zodgrod Wortsnagga</div>
+		</div>
 	</div><div class="card" id="Trukk">
 		<h1>Trukk</h1>
 		<table class="stats">
@@ -1191,7 +1260,8 @@
 			document.getElementById("Battlewagon").style.display = "none";}
 		document.getElementById("Snikrot").onclick = function(){
 			document.getElementById("Snikrot").style.display = "none";}
-		
+		document.getElementById("Zodgrod").onclick = function(){
+			document.getElementById("Zodgrod").style.display = "none";}
 
 
 		//Give card a background

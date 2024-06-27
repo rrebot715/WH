@@ -1,0 +1,310 @@
+body{
+	font-size: 0;
+}
+.card{
+	height: calc(88.9mm - 12px);
+	width: calc(63.5mm - 12px);
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	position: relative;
+}
+.left{
+	height: calc(100% - 15px);
+	padding-top: 15px;
+	width: 17px;
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+.text{
+	height: calc(100% - 20px);
+	width: calc(100% - 55px);
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	padding: 0 10px 0 5px;
+}
+h1{
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 2px solid black;
+	left: -8px;
+	padding-left: 15px;
+	width: calc(100% + 13px);
+	margin-bottom: 3px;
+	height: 21px;
+}
+h2{
+	font-size: 10px;
+	font-weight: 700;
+	margin: 0px;
+}
+h3{
+	text-align: center;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+p{
+	margin: 7px 0;
+}
+p a{
+	font-size: 13px;
+	font-weight: 700;
+}
+ul{
+	list-style-type: square;
+	padding-left: 20px;
+}
+.icon{
+	width: 17px;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+.divider,
+.action{
+	background-color: black;
+	color: white;
+	padding: 2px 2px 1px 2px;
+	position: relative;
+}
+.action{
+	width: 95%;
+	margin-top: 4px;
+}
+.or{
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+}
+.diamond-container {
+    position: absolute;
+    right: 0;
+    width: 18px;   
+    height: 18px;
+    margin-top: -13px;   
+    transform: translate(-50%, -50%); 
+}
+.diamond {
+    width: 100%; /* Set diamond width relative to container */
+    height: 100%; /* Set diamond height relative to container */
+    background-color: transparent;
+    position: absolute;
+    top: 25%; /* Adjust vertical position */
+    left: 25%; /* Adjust horizontal position */
+}
+.diamond::before,
+.diamond::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set width to 100% to cover the diamond */
+    height: 100%; /* Set height to 100% to cover the diamond */
+    background-color: transparent;
+    border: 2px solid black; /* Set border color for the diamond */
+    box-sizing: border-box; /* Ensure border doesn't add to the width and height */
+    transform: rotate(45deg); /* Rotate to create the diamond shape */
+    transform-origin: center; /* Rotate around center */
+}
+.diamond::before{
+	background-color: white;
+}
+.inner-diamond {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.triangle,
+.triangle2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent; 
+    border-right: 5px solid blue; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-90%, -90%); 
+}
+.triangle2{
+	transform: translate(-10%, -10%) rotate(180deg);
+}
+
+
+
+#green p a,
+#green h1{
+	color: #1e6257;
+}
+#green h1,
+#green .diamond::before,
+#green .diamond::after{
+	border-color: #1e6257;
+}
+#green .left{
+	background-color: #1e6257;
+}
+#green .divider,
+#green .action{
+	background-color: #1e6257;
+}
+#green .triangle,
+#green .triangle2{
+	border-right-color: #1e6257;
+}
+
+
+
+
+
+#red p a,
+#red h1{
+	color: #a21217;
+}
+#red h1,
+#red .diamond::before,
+#red .diamond::after{
+	border-color: #a21217;
+}
+#red .left,
+#red .divider,
+#red .action{
+	background-color: #a21217;
+}
+#red .triangle,
+#red .triangle2{
+	border-right-color: #a21217;
+}
+
+
+
+#blue p a,
+#blue h1{
+	color: #0f4d6b;
+}
+#blue h1,
+#blue .diamond::before,
+#blue .diamond::after{
+	border-color: #0f4d6b;
+}
+#blue .left,
+#blue .divider,
+#blue .action{
+	background-color: #0f4d6b;
+}
+#blue .triangle,
+#blue .triangle2{
+	border-right-color: #0f4d6b;
+}
+
+
+#orange p a,
+#orange h1{
+	color: #ff6600;
+}
+#orange h1,
+#orange .diamond::before,
+#orange .diamond::after{
+	border-color: #ff6600;
+}
+#orange .left,
+#orange .divider,
+#orange .action{
+	background-color: #ff6600;
+}
+#orange .triangle,
+#orange .triangle2{
+	border-right-color: #ff6600;
+}
+
+
+/*
+.core{
+	display: none;
+}
+.orks{
+	display: none;
+}
+.tau{
+	display: none;
+}
+.drukhari{
+	display: none;	
+}*/
+
+
+.mission .text{
+	width: calc(100% - 10px);
+	padding: 0 5px;
+	left: 0;
+}
+.mission h1{
+	left: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+}
+.fixed h1{
+	color: #ff6600 !important;
+}
+#deployment .deploymentZone{
+	width: 100%;
+	height: 293px;
+	background-color: #AFB4AE;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#terrain{
+	background-color: #D6D8D3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.terrainNum{
+	position: absolute;
+	top: calc(44.45mm - 8.5px);
+	left: calc(31.75mm - 8.5px);
+	rotate: -90deg;
+	height: 13px;
+	width: 13px;
+	background-color: #D6D8D3;
+	text-align: center;
+	border: 1px solid black;
+	color: red;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+	body {-webkit-print-color-adjust: exact;}
+}
