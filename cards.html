@@ -4,7 +4,7 @@
     <title>Pariah Nexus</title>
     <link rel="stylesheet" type="text/css" href="cards.css">
 </head>
-<body>
+<body><div id="title" style="display: none; font-size: 36px;"></div>
 	<div class="card mission" id="green">
 		<div class="text">
 			<h3>MISSION RULE</h3>
@@ -357,6 +357,64 @@
 				<li><strong>2VP wholly</strong> within 12".</li>
 			</ul>
 		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1>
+				DAWN OF WAR
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/DoW.png);"></div>
+		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1>
+				HAMMER AND ANVIL
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/HaA.png);"></div>
+		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1>
+				SEARCH AND DESTROY
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/SnD.png);"></div>
+		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1>
+				CRUCIBLE OF BATTLE
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/CoB.png);"></div>
+		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1 style="font-size: 17.75px;">
+				SWEEPING ENGAGEMENT
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/SE.png);"></div>
+		</div>
+	</div><div class="card mission" id="deployment">
+		<div class="text">
+			<h1>
+				TIPPING POINT
+			</h1>
+			<div class="deploymentZone" style="background-image: url(images/TP.png);"></div>
+		</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/1.png);">
+		<div class="terrainNum">1</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/2.png);">
+		<div class="terrainNum">2</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/3.png);">
+		<div class="terrainNum">3</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/4.png);">
+		<div class="terrainNum">4</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/5.png);">
+		<div class="terrainNum">5</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/6.png);">
+		<div class="terrainNum">6</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/7.png);">
+		<div class="terrainNum">7</div>
+	</div><div class="card mission" id="terrain" style="background-image: url(images/8.png);">
+		<div class="terrainNum">8</div>
 	</div><div class="card mission" id="red">
 		<div class="text">
 			<h3>SECONDARY</h3>
@@ -724,81 +782,51 @@
 				<a>SCORE:</a> <strong>20VP</strong> if you control three objectives outside your deployment zone.
 			</p>
 		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1>
-				DAWN OF WAR
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/DoW.png);"></div>
-		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1>
-				HAMMER AND ANVIL
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/HaA.png);"></div>
-		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1>
-				SEARCH AND DESTROY
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/SnD.png);"></div>
-		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1>
-				CRUCIBLE OF BATTLE
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/CoB.png);"></div>
-		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1 style="font-size: 17.75px;">
-				SWEEPING ENGAGEMENT
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/SE.png);"></div>
-		</div>
-	</div><div class="card mission" id="deployment">
-		<div class="text">
-			<h1>
-				TIPPING POINT
-			</h1>
-			<div class="deploymentZone" style="background-image: url(images/TP.png);"></div>
-		</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/1.png);">
-		<div class="terrainNum">1</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/2.png);">
-		<div class="terrainNum">2</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/3.png);">
-		<div class="terrainNum">3</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/4.png);">
-		<div class="terrainNum">4</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/5.png);">
-		<div class="terrainNum">5</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/6.png);">
-		<div class="terrainNum">6</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/7.png);">
-		<div class="terrainNum">7</div>
-	</div><div class="card mission" id="terrain" style="background-image: url(images/8.png);">
-		<div class="terrainNum">8</div>
 	</div>
 	<script>
 		const pathname = window.location.href.split('#');
 		if(pathname[1] == "mission"){
 
-			/*//Hide everything
+			//Hide everything
 			const children = document.body.children;
 			for (let i = 0; i < children.length; i++) {
 			    children[i].style.display = 'none';
 			}
-
 			//Generate and unhide the set
+			var Missions = [
+				["A", 17, 5, 24, [1,2,4,6,7,8]],
+				["B", 13, 7, 24, [1,2,4,6,7,8]],
+				["C", 12, 1, 24, [1,2,4,6,7,8]],
+				["D", 17, 4, 24, [1,2,4,6,7,8]],
+				["E", 17, 4, 20, [1, 7, 8]],
+				["F", 11, 2, 20, [1, 7, 8]],
+				["G", 14, 9, 20, [1, 7, 8]],
+				["H", 16, 7, 20, [1, 7, 8]],
+				["I", 11, 4, 21, [1, 2, 3, 4, 6]],
+				["J", 12, 5, 21, [1, 2, 3, 4, 6]],
+				["K", 15, 9, 21, [1, 2, 3, 4, 6]],
+				["L", 17, 2, 21, [1, 2, 3, 4, 6]],
+				["M", 13, 6, 22, [1, 2, 4, 6, 8]],
+				["N", 14, 8, 22, [1, 2, 4, 6, 8]],
+				["O", 10, 9, 22, [1, 2, 4, 6, 8]],
+				["P", 15, 3, 22, [1, 2, 4, 6, 8]],
+				["Q", 15, 3, 23, [3, 5]],
+				["R", 10, 9, 23, [3, 5]],
+				["S", 12, 5, 19, [5]],
+				["T", 18, 3, 19, [5]]
+			];
+			let randomNumber = Math.floor(Math.random() * 20);
 
-			children[2].style.display = 'inline-block';
-*/
+			for(var x=1;x<4;x++){
+				children[Missions[randomNumber][x]].style.display = 'inline-block';
+			}
+			let randomDeployment = Math.floor(Math.random() * Missions[randomNumber][4].length);
+			let deployment = Missions[randomNumber][4];
+			children[deployment[randomDeployment]+24].style.display = 'inline-block';
 
-
+			
+			document.getElementById("title").innerHTML = "Mission: "+Missions[randomNumber][0]+"<br>Deployment: "+deployment[randomDeployment];
+			document.getElementById("title").style.display = 'block';
 		}
 	</script>
 </body>
