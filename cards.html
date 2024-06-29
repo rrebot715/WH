@@ -816,6 +816,7 @@
 				["T", 19, 4, 20, [5]]
 			];
 			var randomNumber = Math.floor(Math.random() * 20);
+			randomNumber = 15;
 			var selectedMission = Missions[randomNumber];
 			console.log(selectedMission);
 			let deploymentArray = selectedMission[4];
@@ -834,7 +835,6 @@
 			
 			document.getElementById("title").innerHTML = "Mission: "+selectedMission[0]+"<br>Deployment: "+deployment;
 			document.getElementById("title").style.display = 'block';
-			console.log("4");
 		}
 	</script>
 </body>
