@@ -816,7 +816,7 @@
 				["T", 18, 3, 19, [5]]
 			];
 			let randomNumber = Math.floor(Math.random() * 20);
-			var selectedMission = Missions[randomNumber][4];
+			var selectedMission = Missions[randomNumber];
 			for(var x=1;x<4;x++){
 				children[selectedMission[x]].style.display = 'inline-block';
 			}
@@ -826,7 +826,7 @@
 			children[deployment+24].style.display = 'inline-block';
 
 			
-			document.getElementById("title").innerHTML = "Mission: "+Missions[randomNumber][0]+"<br>Deployment: "+deployment;
+			document.getElementById("title").innerHTML = "Mission: "+selectedMission[0]+"<br>Deployment: "+deployment;
 			document.getElementById("title").style.display = 'block';
 		}
 	</script>
