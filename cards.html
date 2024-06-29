@@ -821,14 +821,15 @@
 				children[selectedMission[x]].style.display = 'inline-block';
 			}
 			let deploymentArray = selectedMission[4];
-			let deployment = deploymentArray[Math.floor(Math.random() * deploymentArray.length)];
+			let deployment = deploymentArray[Math.floor(Math.random() * (deploymentArray.length + 1))];
 			
 			children[deployment+24].style.display = 'inline-block';
 
 			
 			document.getElementById("title").innerHTML = "Mission: "+selectedMission[0]+"<br>Deployment: "+deployment;
 			document.getElementById("title").style.display = 'block';
-			console.log("1");
+			console.log("deploymentArray");
+			console.log("deployment");
 		}
 	</script>
 </body>
