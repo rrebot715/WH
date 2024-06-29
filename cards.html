@@ -819,7 +819,7 @@
 			var selectedMission = Missions[randomNumber];
 			console.log(selectedMission);
 			let deploymentArray = selectedMission[4];
-			randomNumber = Math.floor(Math.random() * (deploymentArray.length + 1));
+			randomNumber = Math.floor(Math.random() * deploymentArray.length);
 			console.log(randomNumber);
 			let deployment = deploymentArray[randomNumber];
 			console.log(deployment);
