@@ -815,14 +815,19 @@
 				["S", 13, 6, 20, [5]],
 				["T", 19, 3, 20, [5]]
 			];
-			let randomNumber = Math.floor(Math.random() * 20);
+			var randomNumber = Math.floor(Math.random() * 20);
 			var selectedMission = Missions[randomNumber];
 			console.log(selectedMission);
+			let deploymentArray = selectedMission[4];
+			randomNumber = Math.floor(Math.random() * (deploymentArray.length + 1));
+			console.log(randomNumber);
+			let deployment = deploymentArray[randomNumber];
+			console.log(deployment);
+			
 			for(var x=1;x<4;x++){
 				children[selectedMission[x]].style.display = 'inline-block';
 			}
-			let deploymentArray = selectedMission[4];
-			let deployment = deploymentArray[Math.floor(Math.random() * (deploymentArray.length + 1))];
+			
 			
 			children[deployment+25].style.display = 'inline-block';
 
