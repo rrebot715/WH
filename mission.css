@@ -8,9 +8,12 @@ body{
 .deploymentZone{
 	height: calc(100% - 26px) !important;
 }
-.card .text, 
-.card h3,
-.card h1,
+.card .text,
 .card a{
 	font-size: 2vw;
+}
+.card h3,
+.card h1{
+	font-size: 3vw;
+	height: auto;
 }
