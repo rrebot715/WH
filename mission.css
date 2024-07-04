@@ -10,10 +10,10 @@ body{
 }
 .card .text,
 .card a{
-	font-size: 2vw;
+	font-size: 2.5vw;
 }
 .card h3,
 .card h1{
-	font-size: 3vw;
+	font-size: 4vw;
 	height: auto;
 }
