@@ -246,7 +246,9 @@ ul{
 	display: none;	
 }*/
 
-
+.mission{
+	background-color: #D6D8D3;
+}
 .mission .text{
 	width: calc(100% - 10px);
 	padding: 0 5px;

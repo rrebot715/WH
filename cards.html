@@ -786,6 +786,11 @@
 	<script>
 		const pathname = window.location.href.split('#');
 		if(pathname[1] == "mission"){
+			var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                link.href = "mission.css";  
+                document.head.appendChild(link);
 
 			//Hide everything
 			const children = document.body.children;

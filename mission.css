@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+}
+.card{
+	width: calc(50% - 12px);
+	height: calc(70vw - 12px);
+}
+.deploymentZone{
+	height: calc(100% - 26px) !important;
+}
+.card .text, 
+.card h3,
+.card h1,
+.card a{
+	font-size: 2vw;
+}
