@@ -10,7 +10,7 @@
 	<link rel="manifest" href="manifest.json">
 </head>
 <body>
-	<div class="card"><h1>Archon</h1>
+	<div class="card" id="Archon"><h1>Archon</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -69,7 +69,7 @@
 			<div>Invul cannot be re-rolled and is removed after first fail.</div>
 			<div>Infantry, Kabal, Character, Aeldari, Archon</div>
 		</div>
-	</div><div class="card"><h1>Incubi</h1>
+	</div><div class="card" id="Incubi"><h1>Incubi</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -144,7 +144,7 @@
 			<div>Start of Fight phase: Battle-shock test all enemy units within Engagement Range of a unit with this ability.</div>
 			<div>Infantry, Aeldari, Incubi</div>
 		</div>
-	</div><div class="card"><h1>Lelith Hesperax</h1>
+	</div><div class="card" id="Lelith"><h1>Lelith Hesperax</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -192,7 +192,7 @@
 			<div>Once per battle, start of Fight phase: Lelith +4 attacks and 3++</div>
 			<div>Infantry, Wych Cult, Character, Epic Hero, Aeldari, Succubus, Lelith Hesperax</div>
 		</div>
-	</div><div class="card"><h1>Wyches</h1>
+	</div><div class="card" id="Wyches"><h1>Wyches</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -262,7 +262,7 @@
 			<div>Phantasm grenade launcher: Grenades</div>
 			<div>Infantry, Battleline, Wych Cult, Aeldari, Wyches</div>
 		</div>
-	</div><div class="card"><h1>Kabalite Warriors</h1>
+	</div><div class="card" id="Kabalite"><h1>Kabalite Warriors</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -385,7 +385,7 @@
 			<div>Phantasm grenade launcher: Grenades</div>
 			<div>Infantry, Kabal, Battleline, Aeldari, Kabalite Warriors</div>
 		</div>
-	</div><div class="card"><h1>Beastmaster</h1>
+	</div><div class="card" id="Beastmaster"><h1>Beastmaster</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -489,7 +489,7 @@
 			<div>Razorwing: Fly</div>
 
 		</div>
-	</div><div class="card"><h1>Cronos</h1>
+	</div><div class="card" id="Cronos"><h1>Cronos</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -558,7 +558,7 @@
 			<div>Deadly Demise 1</div>
 			<div>Monster, Haemonculus Covens, Fly, Aeldari, Cronos</div>
 		</div>
-	</div><div class="card"><h1>Mandrakes</h1>
+	</div><div class="card" id="Mandrakes"><h1>Mandrakes</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -616,7 +616,7 @@
 			<div>End of opponent’s turn: If not in Engagement Range, you can remove this unit from the battlefield. Your next Reinforcements step, Deep Strike this unit.</div>
 			<div>Infantry, Aeldari, Mandrakes</div>
 		</div>
-	</div><div class="card"><h1>Scourges</h1>
+	</div><div class="card" id="Scourges"><h1>Scourges</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -696,7 +696,7 @@
 			<div>Shoot & Scoot 6</div>
 			<div>Infantry, Fly, Grenades, Jump Pack, Aeldari, Scourges</div>
 		</div>
-	</div><div class="card"><h1>Raider</h1>
+	</div><div class="card" id="Raider"><h1>Raider</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -755,7 +755,7 @@
 			<div>Auto Advance 6"</div>
 			<div>Vehicle, Transport, Dedicated Transport, Fly, Aeldari, Raider</div>
 		</div>
-	</div><div class="card"><h1>Venom</h1>
+	</div><div class="card" id="Venom"><h1>Venom</h1>
 		<table class="stats">
 			<tr>
 				<th>M</th>
@@ -821,12 +821,42 @@
 		if('serviceWorker' in navigator){
 			navigator.serviceWorker.register('service-worker.js');
 		}
+
+		document.getElementById("Archon").onclick = function(){
+			document.getElementById("Archon").style.display = "none";}
+		document.getElementById("Incubi").onclick = function(){
+			document.getElementById("Incubi").style.display = "none";}
+		document.getElementById("Lelith").onclick = function(){
+			document.getElementById("Lelith").style.display = "none";}
+		document.getElementById("Wyches").onclick = function(){
+			document.getElementById("Wyches").style.display = "none";}
+		document.getElementById("Kabalite").onclick = function(){
+			document.getElementById("Kabalite").style.display = "none";}
+		document.getElementById("Beastmaster").onclick = function(){
+			document.getElementById("Beastmaster").style.display = "none";}
+		document.getElementById("Cronos").onclick = function(){
+			document.getElementById("Cronos").style.display = "none";}
+		document.getElementById("Mandrakes").onclick = function(){
+			document.getElementById("Mandrakes").style.display = "none";}
+		document.getElementById("Scourges").onclick = function(){
+			document.getElementById("Scourges").style.display = "none";}
+		document.getElementById("Raider").onclick = function(){
+			document.getElementById("Raider").style.display = "none";}
+		document.getElementById("Venom").onclick = function(){
+			document.getElementById("Venom").style.display = "none";}
+		
+
+		//Give card a background
+		const children = document.body.children;
+		const ids = [];
+		// Iterate through each child element
+		for (let i = 0; i < children.length-1; i++) {
+		    const child = children[i];
+		    // Push the id of each element into the ids array
+		    document.getElementById(child.id).style.backgroundImage = "linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/"+child.id+".jpg')";
+		}
 	</script>
 </body>
 </html>
 
 
-
-<!--
-<tr><td colspan="6" class="abilities">&nbsp;</td></tr>
--->
