@@ -10,7 +10,7 @@
 		}
 		.card{
 			font-size: 32px !important;
-			max-width:calc(100vw - 2px);
+			max-width: calc(100vw - 2px);
 		}
 	</style>
 </head>
@@ -67,6 +67,7 @@
 	<div class="card" id="15"><p></p><div></div></div>
 	<div class="card" id="16"><p></p><div></div></div>
 	<div class="card" id="17"><p></p><div></div></div>
+	<div class="card" id="18"><p></p><div></div></div>
 
 <!--
 
@@ -80,16 +81,16 @@
 
 
 
-
+Your recommendation?
 
 
 -->
 	<script>
-		const japanese = ['Doumo (Doh-moe)', 'Arigato gozaimasu (A–ri–ga–to–u Go–za–i–ma–su)', 'Sumimasen (Su–mi–ma–sen)', 'Daijoubu (Dai-joh-bu)', 'Onegai shimasu (O-ne-gai Shi-ma-su)', 'Torie wa doko desu ka? (Toe-ree-eh Wah Doh-koh Des Kah)', 'Tennai de (Ten-nai De)', 'Kore (Koh-reh)', 'Hitotsu (Hee-toh-tsu)', 'Futatsu (Foo-tah-tsu)', 'Mittsu (Mi-tsu)', 'Nomihoudai (Noh-mee-hoh-oo-dai)','Kampai (Kan-pie)','Kudasai (Koo-dah-sigh)','Omizu (Oh-mee-zoo)','Biru (Bee-roo)','Okaikei (Oh-kah-ee-keh-ee)'];
-		const english = ['Thanks!', 'Thank you! (Formal)', 'sorry/excuse me', 'No thanks', 'Please', 'Where is the toilet?', 'Eat in', 'This', 1, 2, 3,'All you can drink','Cheers!','Please (give me)','Water','Beer','Bill / Check'];
+		const japanese = ['Doumo (Doh-moe)', 'Arigato gozaimasu (A–ri–ga–to–u Go–za–i–ma–su)', 'Sumimasen (Su–mi–ma–sen)', 'Daijoubu (Dai-joh-bu)', 'Onegai shimasu (O-ne-gai Shi-ma-su)', 'Torie wa doko desu ka? (Toe-ree-eh Wah Doh-koh Des Kah)', 'Tennai de (Ten-nai De)', 'Kore (Koh-reh)', 'Hitotsu (Hee-toh-tsu)', 'Futatsu (Foo-tah-tsu)', 'Mittsu (Mi-tsu)', 'Nomihoudai (Noh-mee-hoh-oo-dai)','Kampai (Kan-pie)','Kudasai (Koo-dah-sigh)','Omizu (Oh-mee-zoo)','Biru (Bee-roo)','Okaikei (Oh-kah-ee-keh-ee)', 'Osusume wa nan desu ka? (O-su-su-me Wa Nan Des-ka)'];
+		const english = ['Thanks!', 'Thank you! (Formal)', 'sorry/excuse me', 'No thanks', 'Please', 'Where is the toilet?', 'Eat in', 'This', 1, 2, 3,'All you can drink','Cheers!','Please (give me)','Water','Beer','Bill / Check','Your recommendation?'];
 		var outerDiv;
 
-		for(var q=0;q<=16;q++){
+		for(var q=0;q<=17;q++){
 			outerDiv = document.getElementById(q+1);
 			outerDiv.innerHTML = "<p>"+english[q]+"</p><div>"+japanese[q]+"</div>";
 		}
