@@ -9,8 +9,10 @@
 
 	<link rel="manifest" href="manifest.json">
 	<style type="text/css">
-		#Ghazghkull,
-		#Meganobz{
+		#Warbikers,
+		#Battlewagon,
+		#boyz
+		{
 			display: none;
 		}
 	</style>
@@ -1226,6 +1228,124 @@
 			<div>Deadly Demise D6</div>
 			<div>Vehicle, Transport, Battlewagon</div>
 		</div>
+	</div><div class="card" id="Killrig">
+		<h1>Killrig</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>10</td>
+				<td>3+/6++<br>6+++</td>
+				<td>16</td>
+				<td>7</td>
+				<td>5</td>
+			</tr>
+		</table>
+
+		<table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Wurrtower</td>
+				<td>24</td>
+				<td>D3</td>
+				<td>N/A</td>
+				<td>12</td>
+				<td>-3</td>
+				<td>D6</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Torrent, Haz, Psy</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">'Eavy Lobba</td>
+				<td>48</td>
+				<td>D6</td>
+				<td>5+</td>
+				<td>6</td>
+				<td>0</td>
+				<td>2</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Blast, Indirect</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Stikka Kannon</td>
+				<td>12</td>
+				<td>1</td>
+				<td>5+</td>
+				<td>12</td>
+				<td>-2</td>
+				<td>3</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Anti-Monster/Vehicle 2+, Snagged</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Saw Blades</td>
+				<td>Melee</td>
+				<td>6</td>
+				<td>3+</td>
+				<td>10</td>
+				<td>-1</td>
+				<td>2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">&nbsp;</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Hooves</td>
+				<td>Melee</td>
+				<td>4</td>
+				<td>4+</td>
+				<td>8</td>
+				<td>-1</td>
+				<td>3</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lance, Extra</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Butcha Boyz</td>
+				<td>Melee</td>
+				<td>4</td>
+				<td>3+</td>
+				<td>5</td>
+				<td>-1</td>
+				<td>1</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Anti-Monster/Vehicle 4+, Extra</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Transport 11</div>
+			<div>Deadly Demise D6</div>
+			<div>Start of Fight phase: Select a Orks unit within 12" and roll one D6. 1: this model suffers D3 MW; 2‑5: until the end of the phase, that unit gains +1 Strength to melee weapons; 6: they also gain <strong>LETHAL HITS</strong></div>
+			<div>Snagged: If harpon hits a monster/vehicle: +2 when charging that unit and that unit cannot overwatch</div>
+			<div>Vehicle, Transport, Psyker, Beast Snagga, Kill Rig</div>
+		</div>
 	</div>
 	<script>
 		if('serviceWorker' in navigator){
@@ -1262,7 +1382,8 @@
 			document.getElementById("Snikrot").style.display = "none";}
 		document.getElementById("Zodgrod").onclick = function(){
 			document.getElementById("Zodgrod").style.display = "none";}
-
+		document.getElementById("Killrig").onclick = function(){
+			document.getElementById("Killrig").style.display = "none";}
 
 		//Give card a background
 		const children = document.body.children;
