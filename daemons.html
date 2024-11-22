@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Orkz</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<link rel="manifest" href="manifest.json">
+	<style type="text/css">
+		.card{
+			width: calc(50vw - 10px) !important; 
+			max-width: none;
+		}
+		#Warbikers,
+		#Battlewagon,
+		#Boyz
+		{
+			display: none;
+		}
+	</style>
+</head>
+<body id="body">
+	<div class="card" id="Be’lakor">
+		<h1>Be’lakor</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>10</td>
+				<td>4+/4++</td>
+				<td>18</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+		</table>
+
+		<table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Betraying Shades - focused</td>
+				<td>18</td>
+				<td>12</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-3</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Ignores Cover, Psychic, Dev Wounds</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Betraying Shades</td>
+				<td>18</td>
+				<td>9</td>
+				<td>2+</td>
+				<td>5</td>
+				<td>-2</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Hazardous, Ignores Cover, Psychic, Dev Wounds</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Strike</td>
+				<td>Melee</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>14</td>
+				<td>-4</td>
+				<td>D6+1</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lethal Hits</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Sweep</td>
+				<td>Melee</td>
+				<td>14</td>
+				<td>2+</td>
+				<td>8</td>
+				<td>-3</td>
+				<td>1</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">&nbsp;</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Stealth</div>
+			<div>Deep Strike</div>
+			<div>Deadly Demise D6</div>
+			<div>6" Shadows</div>
+			<div>At the start of the battle round, select one Shadow Form ability. Until the end of the battle round, this model has that ability.<div><strong>Pall of Despair:</strong> In the Battle-shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 6" of this model, that unit must take a Battle-shock test. For the purposes of this ability, if a unit has a Starting Strength of 1, it is considered to be below its Starting Strength while it has lost one or more wounds.</div>
+			<div><strong>Shadow Lord:</strong> While a friendly Legiones Daemonica unit is within 6" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.</div>
+			<div><strong>Wreathed in Shadows:</strong> While a friendly Legiones Daemonica unit is within 6" of this model, that unit can only be targeted by a ranged attack if the attacking model is within 18".</div></div>
+			
+			<div>Monster, Character, Epic Hero, Chaos, Daemon, Be’lakor, Psyker, Fly</div>
+		</div>
+	</div><div class="card" id="Great Unclean One">
+		<h1>Great Unclean One</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>12</td>
+				<td>5+/4++<br>/4+++</td>
+				<td>20</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+		</table>
+
+		<table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Putrid vomit</td>
+				<td>12</td>
+				<td>D6+3</td>
+				<td>N/A</td>
+				<td>5</td>
+				<td>-2</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Torrent, Ignores Cover</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Plague flail</td>
+				<td>6</td>
+				<td>D6+1</td>
+				<td>3+</td>
+				<td>7</td>
+				<td>-2</td>
+				<td>2</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">&nbsp;</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Strike</td>
+				<td>Melee</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>8</td>
+				<td>-2</td>
+				<td>D6</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lethal Hits</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Sweep</td>
+				<td>Melee</td>
+				<td>12</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-1</td>
+				<td>1</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lethal Hits</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>Deadly Demise D6</div>
+			<div>6" Shadows:Nurgle</div>			
+	`		<div>Enhancement: The Endless Gift</div>
+			<div>At the end of your Movement phase, you can select one enemy unit within 12" of this model. Until the start of your next Movement phase, subtract 1 from the Toughness characteristic of models in that unit.</div>
+			<div>While a friendly Nurgle Legiones Daemonica unit is within 6" of this model, models in that unit have 6+++.</div>
+			<div>Monster, Character, Psyker, Chaos, Daemon, Nurgle, Great Unclean One</div>
+		</div>
+	</div><div class="card" id="Keeper of Secrets">
+		<h1>Keeper of Secrets</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>10</td>
+				<td>5+/4++<br>5+++</td>
+				<td>18</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+		</table><table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Phantasmagoria - focused</td>
+				<td>18</td>
+				<td>9</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Dev Wounds, Psychic, Hazardous</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Phantasmagoria</td>
+				<td>18</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>1</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Dev Wounds, Psychic</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Phantasmagoria</td>
+				<td>12</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-1</td>
+				<td>2</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Assault</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Witstealer sword</td>
+				<td>Melee</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>8</td>
+				<td>-2</td>
+				<td>3</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lethal Hits</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Snapping claws</td>
+				<td>Melee</td>
+				<td>4</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>3</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Dev Wounds, Extra Attacks</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Ritual knife</td>
+				<td>Melee</td>
+				<td>3</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Extra Attacks</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>Deadly Demise D6</div>
+			<div>6" Shadows:Slaanesh</div>			
+			<div>While a friendly Slaanesh Legiones Daemonica unit is within 6" of this model, improve the Armour Penetration of melee weapons in that unit by 1.</div>
+			<div>Enhancement: Soulstealer
+			<div>Slaanesh Legiones Daemonica model only. Each time the bearer destroys an enemy model with a melee attack, roll one D6, adding 1 to the result if the bearer is within your army’s Shadow of Chaos. On a 4+, the bearer regains 1 lost wound.</div></div>
+			<div>Monster, Character, Psyker, Chaos, Daemon, Slaanesh, Keeper of Secrets</div>
+		</div>
+	</div><div class="card" id="Shalaxi Helbane">
+		<h1>Shalaxi Helbane</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>10</td>
+				<td>5+/4++<br>5+++</td>
+				<td>20</td>
+				<td>6</td>
+				<td>5</td>
+			</tr>
+		</table><table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Lash of Slaanesh</td>
+				<td>12</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-1</td>
+				<td>2</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Assault</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Pavane of Slaanesh - focused</td>
+				<td>18</td>
+				<td>D6</td>
+				<td>2+</td>
+				<td>9</td>
+				<td>-2</td>
+				<td>D3</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Hazardous, Sustained Hits 3, Psychic, Devastating Wounds</td>
+			</tr>
+			<tr class="rangedRow">
+				<td rowspan="2" class="ranged"></td>
+				<td rowspan="2">Pavane of Slaanesh</td>
+				<td>18</td>
+				<td>D6</td>
+				<td>2+</td>
+				<td>9</td>
+				<td>-1</td>
+				<td>D3</td>
+			</tr>
+			<tr class="rangedRow">
+				<td colspan="6" class="abilities">Devastating Wounds, Psychic</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Soulpiercer</td>
+				<td>Melee</td>
+				<td>6</td>
+				<td>2+</td>
+				<td>14</td>
+				<td>-3</td>
+				<td>D6+2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Precision</td>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Snapping claws</td>
+				<td>Melee</td>
+				<td>4</td>
+				<td>2+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>3</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Devastating Wounds, Extra Attacks</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>Deadly Demise D6</div>
+			<div>6" Shadows:Slaanesh</div>			
+			<div>Each time this model declares a charge that targets a Monster, Vehicle or Character unit, you can re-roll the Charge roll. Each time this model makes a melee attack that targets a Monster, Vehicle or Character unit, you can re-roll the Hit roll, the Wound roll and the Damage roll.</div>
+			<div>At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, subtract 1 from the Attacks characteristic of melee weapons equipped by that unit.</div>
+			<div>Monster, Character, Epic Hero, Psyker, Chaos, Daemon, Slaanesh, Shalaxi Helbane</div>
+		</div>
+	</div><div class="card" id="Plaguebearers">
+		<h1>Plaguebearers</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>5</td>
+				<td>7+/5++</td>
+				<td>2</td>
+				<td>6</td>
+				<td>2</td>
+			</tr>
+		</table><table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Plaguesword</td>
+				<td>Melee</td>
+				<td>2</td>
+				<td>3+</td>
+				<td>4</td>
+				<td>-1</td>
+				<td>1</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Lethal Hits</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</div>
+			<div>Add 1 to Charge rolls made for the bearer’s unit.</div>
+			<div>Infantry, Battleline, Chaos, Daemon, Nurgle, Plaguebearers</div>
+		</div>
+	</div><div class="card" id="Fiends">
+		<h1>Fiends</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>5</td>
+				<td>7+/5++</td>
+				<td>4</td>
+				<td>7</td>
+				<td>2</td>
+			</tr>
+		</table><table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Barbed tail and dissecting claws</td>
+				<td>Melee</td>
+				<td>5</td>
+				<td>3+</td>
+				<td>5</td>
+				<td>-2</td>
+				<td>2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Devastating Wounds</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>While an enemy unit (excluding Vehicle and Titanic units) is within 6" of this unit, each time a model in that enemy unit makes a melee attack, subtract 1 from the Hit roll, and each time a model in that enemy unit takes a Desperate Escape test, subtract 1 from that test.</div>
+			<div>Beast, Chaos, Daemon, Slaanesh, Fiends</div>
+		</div>
+	</div><div class="card" id="Screamers">
+		<h1>Screamers</h1>
+		<table class="stats">
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>SV</th>
+				<th>W</th>
+				<th>LD</th>
+				<th>OC</th>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>4</td>
+				<td>6+/4++</td>
+				<td>3</td>
+				<td>7</td>
+				<td>1</td>
+			</tr>
+		</table><table class="weapon">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Range</th>
+				<th>A</th>
+				<th>WS</th>
+				<th>S</th>
+				<th>AP</th>
+				<th>D</th>
+			</tr>
+			<tr class="meleeRow">
+				<td rowspan="2" class="melee"></td>
+				<td rowspan="2">Barbed tail and dissecting claws</td>
+				<td>Melee</td>
+				<td>3</td>
+				<td>4+</td>
+				<td>6</td>
+				<td>-2</td>
+				<td>2</td>
+			</tr>
+			<tr class="meleeRow">
+				<td colspan="6" class="abilities">Devastating Wounds</td>
+			</tr>
+		</table>
+		<div class="keywords">
+			<div>Deep Strike</div>
+			<div>In your Movement phase, after this unit ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.</div>
+			<div>Beast, Fly, Chaos, Daemon, Tzeentch, Screamers</div>
+		</div>
+	</div>
+
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/WH/service-worker.js');
+		}
+	</script>
+</body>
+</html>
