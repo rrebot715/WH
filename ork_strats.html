@@ -3,9 +3,15 @@
 <head>
     <title>test1</title>
     <link rel="stylesheet" type="text/css" href="cards.css">
+    <style>
+		#bully,
+		#warhorde {
+			display: hidden;
+		}
+	</style>
 </head>
 <body>
-	<div class="card orks" id="green">
+	<div class="card orks bully" id="green">
 		<div class="left">
 			1CP
 		</div>
@@ -30,7 +36,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="blue">
+	</div><div class="card orks bully" id="blue">
 		<div class="left">
 			1CP
 		</div>
@@ -55,7 +61,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="blue">
+	</div><div class="card orks bully" id="blue">
 		<div class="left">
 			1CP
 		</div>
@@ -80,7 +86,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="red">
+	</div><div class="card orks bully" id="red">
 		<div class="left">
 			1CP
 		</div>
@@ -105,7 +111,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="red">
+	</div><div class="card orks bully" id="red">
 		<div class="left">
 			1CP
 		</div>
@@ -130,7 +136,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="red">
+	</div><div class="card orks bully" id="red">
 		<div class="left">
 			1CP
 		</div>
@@ -157,18 +163,7 @@
 		<img src="images/ork_logo.webp" class="icon">
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-	<div class="card orks" id="green" style="font-size: 11.5px;">
+	<div class="card orks warhorde" id="green" style="font-size: 11.5px;">
 		<div class="left">
 			1CP
 		</div>
@@ -193,7 +188,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="green">
+	</div><div class="card orks warhorde" id="green">
 		<div class="left">
 			2CP
 		</div>
@@ -218,7 +213,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="green">
+	</div><div class="card orks warhorde" id="green">
 		<div class="left">
 			1CP
 		</div>
@@ -243,7 +238,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="green">
+	</div><div class="card orks warhorde" id="green">
 		<div class="left">
 			1CP
 		</div>
@@ -268,7 +263,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="blue">
+	</div><div class="card orks warhorde" id="blue">
 		<div class="left">
 			1CP
 		</div>
@@ -293,7 +288,7 @@
 			</p>
 		</div>
 		<img src="images/ork_logo.webp" class="icon">
-	</div><div class="card orks" id="blue">
+	</div><div class="card orks warhorde" id="blue">
 		<div class="left">
 			1CP
 		</div>
@@ -312,6 +307,161 @@
 			</p>
 			<p>
 				<a>EFFECT:</a> Until the end of the turn, add 2 to Advance and Charge rolls made for your unit.
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div>
+
+
+
+
+	<div class="card orks taktikal" id="green" style="font-size: 11.5px;">
+		<div class="left">
+			1CP
+		</div>
+		<div class="text">
+			<h1>
+				DAT'S OURS!
+			</h1>
+			<h2>
+				TAKTIKAL – STRATEGIC PLOY
+			</h2>
+			<p>
+				<a  style="font-size: 12px;">WHEN:</a> Command phase. 
+			</p>
+			<p>
+				<a  style="font-size: 12px;">TARGET:</a> One ORKS unit from your army that is within Engagement Range of one or more enemy units.
+			</p>
+			<p>
+				<a  style="font-size: 12px;">EFFECT:</a> Until the start of the next Command phase, add 1 to the Objective Control characteristic of models in your unit. 
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div><div class="card orks taktikal" id="green">
+		<div class="left">
+			2CP
+		</div>
+		<div class="text">
+			<h1 style="padding-left: 0; width: calc(100% + 28px); text-align: center; font-size: 17px">
+				FIGHT PROPPA
+			</h1>
+			<h2>
+				TAKTIKAL – BATTLE TACTIC
+			</h2>
+			<p>
+				<a>WHEN:</a> Fight phase. 
+			</p>
+			<p>
+				<a>TARGET:</a> One ORKS INFANTRY or ORKS MOUNTED unit from your army that has not been selected to fight this phase.
+			</p>
+			<p style="font-size: 10.5px;">
+				<a>EFFECT:</a> Select the <strong>[SUSTAINED HITS 1]</strong> or <strong>[LETHAL HITS]</strong> ability. Until the end of the phase, melee weapons equipped by models in your unit have the selected ability.
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div><div class="card orks taktikal" id="blue">
+		<div class="left">
+			1CP
+		</div>
+		<div class="text">
+			<h1 style="padding-left: 0; width: calc(100% + 28px); text-align: center; font-size: 14px">
+				TAKTIKAL RETREAT
+			</h1>
+			<h2>
+				TAKTIKAL – STRATEGIC PLOY
+			</h2>
+			<p>
+				<a>WHEN:</a> Your Movement phase, just after an ORKS unit from your army Falls Back. 
+			</p>
+			<p>
+				<a>TARGET:</a> That ORKS unit.
+			</p>
+			<p>
+				<a>EFFECT:</a> Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div><div class="card orks taktikal" id="blue">
+		<div class="left">
+			1CP
+		</div>
+		<div class="text">
+			<h1>
+				KRUNCHIN’ DESCENT
+			</h1>
+			<h2>
+				TAKTIKAL – BATTLE TACTIC
+			</h2>
+			<p>
+				<a>WHEN:</a> Your Charge phase, just after a STORMBOYZ unit from your army ends a Charge move.
+			</p>
+			<p>
+				<a>TARGET:</a> That STORMBOYZ unit.
+			</p>
+			<p>
+				<a>EFFECT:</a> Select one enemy unit within Engagement Range of your unit, then roll one D6 for each model in your unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (max 6).
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div><div class="card orks taktikal" id="red">
+		<div class="left">
+			1CP
+		</div>
+		<div class="text">
+			<h1>
+				ON TO DA NEXT
+			</h1>
+			<h2>
+				TAKTIKAL – STRATEGIC PLOY
+			</h2>
+			<p>
+				<a>WHEN:</a> Your opponent’s Movement phase, just after an enemy unit Falls Back.
+			</p>
+			<p>
+				<a>TARGET:</a> One ORKS unit from your army that was within Engagement Range of that enemy unit at the start of the phase.
+			</p>
+			<p>
+				<a>EFFECT:</a> Your unit can make a Normal move of up to 6".
+			</p>
+			<p style="display: none;">
+				<a>RESTRICTIONS:</a> 
+			</p>
+		</div>
+		<img src="images/ork_logo.webp" class="icon">
+	</div><div class="card orks taktikal" id="red">
+		<div class="left">
+			1CP
+		</div>
+		<div class="text">
+			<h1>
+				DED SNEAKY
+			</h1>
+			<h2>
+				TAKTIKAL – STRATEGIC PLOY
+			</h2>
+			<p>
+				<a>WHEN:</a> End of your opponent’s Fight phase.
+			</p>
+			<p>
+				<a>TARGET:</a> One KOMMANDOS or STORMBOYZ unit from your army that is not within Engagement Range of one or more enemy units.
+			</p>
+			<p>
+				<a>EFFECT:</a> Remove your unit from the battlefield and place it into Strategic Reserves.
 			</p>
 			<p style="display: none;">
 				<a>RESTRICTIONS:</a> 
