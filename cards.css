@@ -25,6 +25,9 @@ body{
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
 }
+.challenger .left{
+	height: calc(50% - 15px);
+}
 .text{
 	height: calc(100% - 20px);
 	width: calc(100% - 55px);
@@ -32,6 +35,9 @@ body{
 	top: 10px;
 	left: 30px;
 	padding: 0 10px 0 5px;
+}
+.challenger .text{
+	height: unset;
 }
 h1{
 	position: relative;
