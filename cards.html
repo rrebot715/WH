@@ -1167,15 +1167,14 @@
 	            
 	            let randomNumber = Math.floor(Math.random() * Missions.length);
 	            let selectedMission = Missions[randomNumber];
-	            let deploymentArray = selectedMission[4];
+	            let deploymentArray = selectedMission[3];
 	            randomNumber = Math.floor(Math.random() * deploymentArray.length);
 	            let deployment = deploymentArray[randomNumber];
 	            
-	            for (var x = 1; x < 4; x++) {
+	            for (var x = 1; x < 3; x++) {
 	                children[selectedMission[x]].style.display = 'inline-block';
 	            }
 	            children[deployment + 16].style.display = 'inline-block';
-console.log(selectedMission);	            
 	            document.getElementById("title").innerHTML = "Deployment: " + deployment;
 	            document.getElementById("title").style.display = 'block';
 	            document.getElementById('letterDropdown').value = selectedMission[0];
