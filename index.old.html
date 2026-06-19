@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WH</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<link rel="manifest" href="manifest.json">
+	<style>
+		#homeButtonContainer{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+		}
+		#homeButtonContainer button{
+			margin: 10px;
+			padding: 1vw;
+			font-size: 36px;
+			border-radius: 15px;
+			background-color: #eeeeee;
+		}
+		#homeButtonContainer button:hover{
+			background-color: #cccccc;
+		}
+		#homeButtonContainer a{
+			text-decoration: none;
+			text-decoration-color: black;
+			color: black;
+		}
+		#homeButtonContainer a:hover{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="homeButtonContainer">
+		<button><a href="cards.html">2025 Cards</a></button>
+		<button><a href="cards.html#mission">Random Mission</a></button>
+		<button><a href="orkz.html">Orkz</a></button>
+		<button><a href="ork_strats.html">Ork Stratz</a></button>
+		<button><a href="drukhari.html">Drukhari</a></button>
+		<button><a href="drukhari_strats.html">Drukhari Strats</a></button>
+		<button><a href="daemons.html">Daemons</a></button>
+	</div>
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/WH/service-worker.js');
+		}
+	</script>
+</body>
+</html>
